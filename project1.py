@@ -19,15 +19,15 @@ def soprano_is_caught(p1_in, p1_out, p2_in, p2_out, t_hop):
     return is_currently_in(t_hop, p1_in, p1_out) or is_currently_in(t_hop, p2_in, p2_out)
     
 
-p1_in = 5
-p1_out = 1
-
-p2_in = 5 
-p2_out = 1
-
-t_hop = 5
-
 def main():
+    p1_in = int(input())
+    p1_out = int(input())
+
+    p2_in = int(input())
+    p2_out = int(input())
+
+    t_hop = int(input())
+
     if soprano_is_caught(p1_in, p1_out, p2_in, p2_out, t_hop):
         print("CAUGHT")
     else:
