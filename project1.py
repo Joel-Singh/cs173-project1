@@ -1,3 +1,4 @@
+# Need to figure out what to do if the sum of p_in and  p_out is greater than 24
 def soprano_is_caught(p1_in, p1_out, p2_in, p2_out, t_hop):
     """
     Returns a bool indicating whether soprano is caught
