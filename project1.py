@@ -14,6 +14,11 @@ def soprano_is_caught(p1_in, p1_out, p2_in, p2_out, t_hop):
         bool: Whether soprano is caught
     """
     def is_currently_in(time, p_in, p_out):
+        time_as_hours = float(time)/60
+        time_as_hours = time_as_hours % 24
+
+        time = float(time_as_hours) * 60
+
         remainder = time % (p_in + p_out)
         return remainder < p_in
 
